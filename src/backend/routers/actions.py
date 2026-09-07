@@ -5,7 +5,7 @@ from ..services import sync_store
 from ..services.google_calendar_client import create_event
 from ..services.google_tasks_client import create_task
 from ..services.notes import build_notes
-from ..services.pipeline import TASKS_PATH
+from ..services.pipelines import TASKS_PATH
 from ..utils import read_json
 
 router = APIRouter(prefix="/api/actions", tags=["actions"])

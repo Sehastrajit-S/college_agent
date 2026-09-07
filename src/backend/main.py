@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routers import actions, gmail, run, settings, tasks
+from .routers import actions, gmail, run, tasks
 
 app = FastAPI(title="Stux Agent API")
 
@@ -14,6 +14,10 @@ app.add_middleware(
 
 app.include_router(tasks.router)
 app.include_router(run.router)
-app.include_router(settings.router)
 app.include_router(gmail.router)
 app.include_router(actions.router)
+
+
+@app.get("/api/health", tags=["health"])
+def health():
+    return {"status": "ok"}
