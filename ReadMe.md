@@ -240,4 +240,4 @@ and [Gmail error-handling guide](https://developers.google.com/workspace/gmail/a
 - `output/` — generated private data; created at runtime and ignored by Git
 
 
-###Used the help of Codex to generate some
+###Used the help of Codex to generate
