@@ -1,0 +1,4 @@
+{
+  "gmailQuery": "from:notifications@instructure.com",
+  "limit": 15
+}
